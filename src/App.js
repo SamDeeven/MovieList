@@ -8,6 +8,7 @@ function App() {
           This is a Movie Listing Site
         </h1>
         <p>Top Movies</p>
+        <p>New Movies</p>
     </div>
   );
   }
