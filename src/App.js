@@ -7,7 +7,7 @@ function App() {
         <h1>
           This is a Movie Listing Site
         </h1>
-        <p>Movies</p>
+        <p>Top Movies</p>
     </div>
   );
   }
