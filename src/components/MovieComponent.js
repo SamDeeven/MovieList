@@ -15,7 +15,7 @@ const MovieComponent = (props) => {
                 <span className="movieInfo">Type: {Type}</span>
 
             </div>
-            
+            <button className="favBtn">Add to Favorites<i class="fas fa-star"></i></button>
             
             </div>
     )

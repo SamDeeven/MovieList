@@ -45,7 +45,8 @@ const onSearch = (e)=>{
            <i className="searchicon fas fa-search"></i>        
            <input onChange={onSearch} value={search} setChosen={setChosen} className="search" type="text" placeholder="Search Moive/Series"/>
         </div>
-        
+        <a className="favLink">Favorites</a>
+       
         </div>
 
 
