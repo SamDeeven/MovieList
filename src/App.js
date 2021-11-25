@@ -9,6 +9,7 @@ function App() {
         </h1>
         <p>Top Movies</p>
         <p>New Movies</p>
+        <p>Old Movies</p>
     </div>
   );
   }
