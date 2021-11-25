@@ -3,13 +3,18 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-        <h1>
-          This is a Movie Listing Site
-        </h1>
-        <a href="#">Top Movies</a>
-        <a href="#">New Movies</a>
-        <a href="#">Old Movies</a>
+    <div className="total">
+      <div className="navbar">
+        <div className="titledetails">
+      <i className="movieicon fas fa-film"></i>        
+      <h1 className="title">Movie Listing Site</h1>
+      </div>
+        <div className="searchbar">
+           <i className="searchicon fas fa-search"></i>        
+           <input className="search" type="text" placeholder="Moive/Series"/>
+        </div>
+        
+        </div>
     </div>
   );
   }
