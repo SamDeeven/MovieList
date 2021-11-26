@@ -3,6 +3,9 @@ import './App.css';
 import MovieComponent from './components/MovieComponent';
 import axios from 'axios';
 import MovieInfo from './components/MovieInfo';
+import AddFav from './components/AddToFav';
+
+
 
 export const API_KEY = '1a069c3a';
 
@@ -13,6 +16,7 @@ function App() {
   const [timeoutId,setTimeoutId] = useState();
   const [movieList, setMovieList] = useState([]);
   const [chosen, setChosen] = useState();
+  const [fav,setFav] = useState([]);
 
 
 const fetchData = async(searchMovie) => {
@@ -41,14 +45,18 @@ const onSearch = (e)=>{
       <i className="movieicon fas fa-film"></i>        
       <h1 className="title">Movie Listing Site</h1>
       </div>
-        <div className="searchbar">
-           <i className="searchicon fas fa-search"></i>        
-           <input onChange={onSearch} value={search} setChosen={setChosen} className="search" type="text" placeholder="Search Moive/Series"/>
-        </div>
-        <a className="favLink">Favorites</a>
+        
        
         </div>
+        <div className="welcome">
+          <h1 className="welcome">Welcome to Movie Listing Site</h1>
+        </div>
 
+
+        <div className="searchbar">
+           <input onChange={onSearch} value={search} setChosen={setChosen} className="search" type="text" placeholder="Search Moive/Series" />
+           <button type="submit" className="searchBtn"><i className="searchicon fas fa-search"></i>Search</button>
+        </div>
 
         {chosen && <MovieInfo chosen={chosen} setChosen={setChosen}/>}
 
@@ -65,17 +73,10 @@ const onSearch = (e)=>{
 
             </div>
           }
-      
-        
-
-
-
-
-
-
 
         </div>
 
+    
 
     </div>
   );

@@ -1,7 +1,10 @@
+.total {
+    background-color: aliceblue;
+    height: 100%;
+}
+
 .homeImage {
-    /* width: 500px;
-    height: 500px; */
-    margin: 150px;
+    margin: 0px;
     opacity: 80%;
 }
 
@@ -12,8 +15,7 @@
     height: 65px;
     /* width: 100%; */
     /* padding: 10px; */
-    box-shadow: 0 3px 6px 0 rgb(73, 35, 67);
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .movieicon {
@@ -36,10 +38,27 @@
     font-size: 25px;
 }
 
+.welcome {
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+}
+
 .search {
-    border-radius: 5px;
     height: 30px;
     width: 300px;
+}
+
+.searchBtn {
+    height: 30px;
+    width: 100px;
+    border-color: white;
+    /* background-color: #1E90FF; */
+    background-color: #4682B4;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .searchicon {
@@ -48,20 +67,23 @@
 }
 
 .searchbar {
+    background-color: lightcyan;
     display: flex;
     flex-direction: row;
     padding: 10px 10px;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
+    height: 50px;
+    margin: 0 550px 0 550px;
 }
 
 .favLink {
-    padding-top: 20px;
     cursor: pointer;
     color: white;
-    background-color: black;
+    background-color: lightseagreen;
     box-shadow: #fff;
     text-align: right;
+    text-decoration: none;
 }
 
 .movieListContainer {

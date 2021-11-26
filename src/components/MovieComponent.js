@@ -1,6 +1,8 @@
+import React from 'react'
+import AddFav from './AddToFav';
+
 const MovieComponent = (props) => {
     const {Title, Year, imdbID, Type, Poster} = props.movie;
-
 
 
 
@@ -13,12 +15,13 @@ const MovieComponent = (props) => {
             <div className="infoColumn">
                 <span className="movieInfo">Year: {Year}</span>
                 <span className="movieInfo">Type: {Type}</span>
+            </div>
+
+          <AddFav/>
 
             </div>
-            <button className="favBtn">Add to Favorites<i class="fas fa-star"></i></button>
-            
-            </div>
     )
+    
 
 };
 export default MovieComponent
